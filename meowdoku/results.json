@@ -1,0 +1,10355 @@
+{
+ "box_capacity": {
+  "1x1": 1,
+  "1x2": 1,
+  "1x3": 1,
+  "1x4": 1,
+  "1x5": 1,
+  "1x6": 1,
+  "1x7": 1,
+  "1x8": 1,
+  "2x2": 1,
+  "2x3": 2,
+  "2x4": 2,
+  "2x5": 2,
+  "2x6": 2,
+  "2x7": 2,
+  "2x8": 2,
+  "3x3": 2,
+  "3x4": 3,
+  "3x5": 3,
+  "3x6": 3,
+  "3x7": 3,
+  "3x8": 3,
+  "4x4": 4,
+  "4x5": 4,
+  "4x6": 4,
+  "4x7": 4,
+  "4x8": 4,
+  "5x5": 5,
+  "5x6": 5,
+  "5x7": 5,
+  "5x8": 5,
+  "6x6": 6,
+  "6x7": 6,
+  "6x8": 6,
+  "7x7": 7,
+  "7x8": 7,
+  "8x8": 8
+ },
+ "full_patterns_square": {
+  "1x1": {
+   "cats": 1,
+   "count": 1
+  },
+  "2x2": {
+   "cats": 1,
+   "count": 4
+  },
+  "3x3": {
+   "cats": 2,
+   "count": 10
+  },
+  "4x4": {
+   "cats": 4,
+   "count": 2
+  },
+  "5x5": {
+   "cats": 5,
+   "count": 14
+  },
+  "6x6": {
+   "cats": 6,
+   "count": 90
+  }
+ },
+ "min_cats_in_box_N8": {
+  "1x1": 0,
+  "1x2": 0,
+  "1x3": 0,
+  "1x4": 0,
+  "1x5": 0,
+  "1x6": 0,
+  "1x7": 0,
+  "1x8": 1,
+  "2x2": 0,
+  "2x3": 0,
+  "2x4": 0,
+  "2x5": 0,
+  "2x6": 1,
+  "2x7": 1,
+  "2x8": 2,
+  "3x3": 0,
+  "3x4": 0,
+  "3x5": 1,
+  "3x6": 1,
+  "3x7": 2,
+  "3x8": 3,
+  "4x4": 0,
+  "4x5": 1,
+  "4x6": 2,
+  "4x7": 3,
+  "4x8": 4,
+  "5x5": 2,
+  "5x6": 3,
+  "5x7": 4,
+  "5x8": 5,
+  "6x6": 4,
+  "6x7": 5,
+  "6x8": 6,
+  "7x7": 6,
+  "7x8": 7,
+  "8x8": 8
+ },
+ "min_cats_formula_holds": true,
+ "box_rules": [
+  {
+   "box": "1x1",
+   "k": 1,
+   "capacity": 1,
+   "forced_empty_local": [
+    [
+     -1,
+     -1
+    ],
+    [
+     -1,
+     0
+    ],
+    [
+     -1,
+     1
+    ],
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     -1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "notes": [
+    "whole row 0 of the box is empty outside the box",
+    "whole column 0 of the box is empty outside the box"
+   ],
+   "picture": "x x x\nx # x\nx x x",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "1x2",
+   "k": 1,
+   "capacity": 1,
+   "forced_empty_local": [
+    [
+     -1,
+     0
+    ],
+    [
+     -1,
+     1
+    ],
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "notes": [
+    "whole row 0 of the box is empty outside the box"
+   ],
+   "picture": ". x x .\nx # # x\n. x x .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "1x3",
+   "k": 1,
+   "capacity": 1,
+   "forced_empty_local": [
+    [
+     -1,
+     1
+    ],
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "notes": [
+    "whole row 0 of the box is empty outside the box"
+   ],
+   "picture": ". . x . .\nx # # # x\n. . x . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "1x4",
+   "k": 1,
+   "capacity": 1,
+   "forced_empty_local": [
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "notes": [
+    "whole row 0 of the box is empty outside the box"
+   ],
+   "picture": ". . . . . .\nx # # # # x\n. . . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "1x5",
+   "k": 1,
+   "capacity": 1,
+   "forced_empty_local": [
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     5
+    ]
+   ],
+   "notes": [
+    "whole row 0 of the box is empty outside the box"
+   ],
+   "picture": ". . . . . . .\nx # # # # # x\n. . . . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "2x2",
+   "k": 1,
+   "capacity": 1,
+   "forced_empty_local": [],
+   "notes": [],
+   "picture": ". . . .\n. # # .\n. # # .\n. . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "2x3",
+   "k": 1,
+   "capacity": 2,
+   "forced_empty_local": [],
+   "notes": [],
+   "picture": ". . . . .\n. # # # .\n. # # # .\n. . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "2x3",
+   "k": 2,
+   "capacity": 2,
+   "forced_empty_local": [
+    [
+     -1,
+     0
+    ],
+    [
+     -1,
+     1
+    ],
+    [
+     -1,
+     2
+    ],
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     -1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "notes": [
+    "whole row 0 of the box is empty outside the box",
+    "whole row 1 of the box is empty outside the box",
+    "whole column 0 of the box is empty outside the box",
+    "whole column 2 of the box is empty outside the box"
+   ],
+   "picture": ". x x x .\nx # x # x\nx # x # x\n. x x x .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "2x4",
+   "k": 1,
+   "capacity": 2,
+   "forced_empty_local": [],
+   "notes": [],
+   "picture": ". . . . . .\n. # # # # .\n. # # # # .\n. . . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "2x4",
+   "k": 2,
+   "capacity": 2,
+   "forced_empty_local": [
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     -1
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "notes": [
+    "whole row 0 of the box is empty outside the box",
+    "whole row 1 of the box is empty outside the box"
+   ],
+   "picture": ". . . . . .\nx # # # # x\nx # # # # x\n. . . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "2x5",
+   "k": 1,
+   "capacity": 2,
+   "forced_empty_local": [],
+   "notes": [],
+   "picture": ". . . . . . .\n. # # # # # .\n. # # # # # .\n. . . . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "2x5",
+   "k": 2,
+   "capacity": 2,
+   "forced_empty_local": [
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     -1
+    ],
+    [
+     1,
+     5
+    ]
+   ],
+   "notes": [
+    "whole row 0 of the box is empty outside the box",
+    "whole row 1 of the box is empty outside the box"
+   ],
+   "picture": ". . . . . . .\nx # # # # # x\nx # # # # # x\n. . . . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "3x3",
+   "k": 1,
+   "capacity": 2,
+   "forced_empty_local": [],
+   "notes": [],
+   "picture": ". . . . .\n. # # # .\n. # # # .\n. # # # .\n. . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "3x3",
+   "k": 2,
+   "capacity": 2,
+   "forced_empty_local": [
+    [
+     1,
+     1
+    ]
+   ],
+   "notes": [],
+   "picture": ". . . . .\n. # # # .\n. # x # .\n. # # # .\n. . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "3x4",
+   "k": 1,
+   "capacity": 3,
+   "forced_empty_local": [],
+   "notes": [],
+   "picture": ". . . . . .\n. # # # # .\n. # # # # .\n. # # # # .\n. . . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "3x4",
+   "k": 2,
+   "capacity": 3,
+   "forced_empty_local": [],
+   "notes": [],
+   "picture": ". . . . . .\n. # # # # .\n. # # # # .\n. # # # # .\n. . . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "3x4",
+   "k": 3,
+   "capacity": 3,
+   "forced_empty_local": [
+    [
+     -1,
+     0
+    ],
+    [
+     -1,
+     3
+    ],
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     -1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     -1
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "notes": [
+    "whole row 0 of the box is empty outside the box",
+    "whole row 1 of the box is empty outside the box",
+    "whole row 2 of the box is empty outside the box",
+    "whole column 0 of the box is empty outside the box",
+    "whole column 3 of the box is empty outside the box"
+   ],
+   "picture": ". x . . x .\nx # # # # x\nx # x x # x\nx # # # # x\n. x . . x .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "3x5",
+   "k": 1,
+   "capacity": 3,
+   "forced_empty_local": [],
+   "notes": [],
+   "picture": ". . . . . . .\n. # # # # # .\n. # # # # # .\n. # # # # # .\n. . . . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "3x5",
+   "k": 2,
+   "capacity": 3,
+   "forced_empty_local": [],
+   "notes": [],
+   "picture": ". . . . . . .\n. # # # # # .\n. # # # # # .\n. # # # # # .\n. . . . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "3x5",
+   "k": 3,
+   "capacity": 3,
+   "forced_empty_local": [
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     -1
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     -1
+    ],
+    [
+     2,
+     5
+    ]
+   ],
+   "notes": [
+    "whole row 0 of the box is empty outside the box",
+    "whole row 1 of the box is empty outside the box",
+    "whole row 2 of the box is empty outside the box"
+   ],
+   "picture": ". . . . . . .\nx # # # # # x\nx # # # # # x\nx # # # # # x\n. . . . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "4x4",
+   "k": 1,
+   "capacity": 4,
+   "forced_empty_local": [],
+   "notes": [],
+   "picture": ". . . . . .\n. # # # # .\n. # # # # .\n. # # # # .\n. # # # # .\n. . . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "4x4",
+   "k": 2,
+   "capacity": 4,
+   "forced_empty_local": [],
+   "notes": [],
+   "picture": ". . . . . .\n. # # # # .\n. # # # # .\n. # # # # .\n. # # # # .\n. . . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "4x4",
+   "k": 3,
+   "capacity": 4,
+   "forced_empty_local": [],
+   "notes": [],
+   "picture": ". . . . . .\n. # # # # .\n. # # # # .\n. # # # # .\n. # # # # .\n. . . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "4x4",
+   "k": 4,
+   "capacity": 4,
+   "forced_empty_local": [
+    [
+     -1,
+     0
+    ],
+    [
+     -1,
+     1
+    ],
+    [
+     -1,
+     2
+    ],
+    [
+     -1,
+     3
+    ],
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     -1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     -1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     -1
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     4,
+     3
+    ]
+   ],
+   "notes": [
+    "whole row 0 of the box is empty outside the box",
+    "whole row 1 of the box is empty outside the box",
+    "whole row 2 of the box is empty outside the box",
+    "whole row 3 of the box is empty outside the box",
+    "whole column 0 of the box is empty outside the box",
+    "whole column 1 of the box is empty outside the box",
+    "whole column 2 of the box is empty outside the box",
+    "whole column 3 of the box is empty outside the box"
+   ],
+   "picture": ". x x x x .\nx x # # x x\nx # x x # x\nx # x x # x\nx x # # x x\n. x x x x .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "4x5",
+   "k": 1,
+   "capacity": 4,
+   "forced_empty_local": [],
+   "notes": [],
+   "picture": ". . . . . . .\n. # # # # # .\n. # # # # # .\n. # # # # # .\n. # # # # # .\n. . . . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "4x5",
+   "k": 2,
+   "capacity": 4,
+   "forced_empty_local": [],
+   "notes": [],
+   "picture": ". . . . . . .\n. # # # # # .\n. # # # # # .\n. # # # # # .\n. # # # # # .\n. . . . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "4x5",
+   "k": 3,
+   "capacity": 4,
+   "forced_empty_local": [],
+   "notes": [],
+   "picture": ". . . . . . .\n. # # # # # .\n. # # # # # .\n. # # # # # .\n. # # # # # .\n. . . . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "4x5",
+   "k": 4,
+   "capacity": 4,
+   "forced_empty_local": [
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     -1
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     -1
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     -1
+    ],
+    [
+     3,
+     5
+    ]
+   ],
+   "notes": [
+    "whole row 0 of the box is empty outside the box",
+    "whole row 1 of the box is empty outside the box",
+    "whole row 2 of the box is empty outside the box",
+    "whole row 3 of the box is empty outside the box"
+   ],
+   "picture": ". . . . . . .\nx # # # # # x\nx # # # # # x\nx # # # # # x\nx # # # # # x\n. . . . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "5x5",
+   "k": 1,
+   "capacity": 5,
+   "forced_empty_local": [],
+   "notes": [],
+   "picture": ". . . . . . .\n. # # # # # .\n. # # # # # .\n. # # # # # .\n. # # # # # .\n. # # # # # .\n. . . . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "5x5",
+   "k": 2,
+   "capacity": 5,
+   "forced_empty_local": [],
+   "notes": [],
+   "picture": ". . . . . . .\n. # # # # # .\n. # # # # # .\n. # # # # # .\n. # # # # # .\n. # # # # # .\n. . . . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "5x5",
+   "k": 3,
+   "capacity": 5,
+   "forced_empty_local": [],
+   "notes": [],
+   "picture": ". . . . . . .\n. # # # # # .\n. # # # # # .\n. # # # # # .\n. # # # # # .\n. # # # # # .\n. . . . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "5x5",
+   "k": 4,
+   "capacity": 5,
+   "forced_empty_local": [],
+   "notes": [],
+   "picture": ". . . . . . .\n. # # # # # .\n. # # # # # .\n. # # # # # .\n. # # # # # .\n. # # # # # .\n. . . . . . .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  },
+  {
+   "box": "5x5",
+   "k": 5,
+   "capacity": 5,
+   "forced_empty_local": [
+    [
+     -1,
+     0
+    ],
+    [
+     -1,
+     1
+    ],
+    [
+     -1,
+     2
+    ],
+    [
+     -1,
+     3
+    ],
+    [
+     -1,
+     4
+    ],
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     -1
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     -1
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     -1
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     -1
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     5,
+     4
+    ]
+   ],
+   "notes": [
+    "whole row 0 of the box is empty outside the box",
+    "whole row 1 of the box is empty outside the box",
+    "whole row 2 of the box is empty outside the box",
+    "whole row 3 of the box is empty outside the box",
+    "whole row 4 of the box is empty outside the box",
+    "whole column 0 of the box is empty outside the box",
+    "whole column 1 of the box is empty outside the box",
+    "whole column 2 of the box is empty outside the box",
+    "whole column 3 of the box is empty outside the box",
+    "whole column 4 of the box is empty outside the box"
+   ],
+   "picture": ". x x x x x .\nx # # # # # x\nx # # # # # x\nx # # # # # x\nx # # # # # x\nx # # # # # x\n. x x x x x .",
+   "exact_N10_interior_same_local": true,
+   "exact_N12_interior_same_local": true,
+   "exact_N10_corner_same_as_interior": true,
+   "extra_forced_exact_N10_interior_local": [],
+   "far_unexplained": []
+  }
+ ],
+ "shape_rules": [
+  {
+   "size": 1,
+   "cells": [
+    [
+     0,
+     0
+    ]
+   ],
+   "forced_empty": [
+    [
+     -3,
+     0
+    ],
+    [
+     -2,
+     0
+    ],
+    [
+     -1,
+     -1
+    ],
+    [
+     -1,
+     0
+    ],
+    [
+     -1,
+     1
+    ],
+    [
+     0,
+     -3
+    ],
+    [
+     0,
+     -2
+    ],
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     -1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     6,
+     0
+    ]
+   ],
+   "equals_intersection_rule": true,
+   "picture": "x x x\nx # x\nx x x"
+  },
+  {
+   "size": 2,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "forced_empty": [
+    [
+     -1,
+     0
+    ],
+    [
+     -1,
+     1
+    ],
+    [
+     0,
+     -3
+    ],
+    [
+     0,
+     -2
+    ],
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "equals_intersection_rule": true,
+   "picture": ". x x .\nx # # x\n. x x ."
+  },
+  {
+   "size": 3,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "forced_empty": [
+    [
+     -1,
+     1
+    ],
+    [
+     0,
+     -3
+    ],
+    [
+     0,
+     -2
+    ],
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "equals_intersection_rule": true,
+   "picture": ". . x . .\nx # # # x\n. . x . ."
+  },
+  {
+   "size": 3,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "forced_empty": [
+    [
+     -1,
+     0
+    ],
+    [
+     0,
+     -1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "equals_intersection_rule": true,
+   "picture": ". x . .\nx # # .\n. # x .\n. . . ."
+  },
+  {
+   "size": 4,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "forced_empty": [
+    [
+     0,
+     -3
+    ],
+    [
+     0,
+     -2
+    ],
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     0,
+     6
+    ]
+   ],
+   "equals_intersection_rule": true,
+   "picture": ". . . . . .\nx # # # # x\n. . . . . ."
+  },
+  {
+   "size": 4,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "forced_empty": [
+    [
+     0,
+     -1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "equals_intersection_rule": true,
+   "picture": ". . . . .\nx # # # .\n. # x . .\n. . . . ."
+  },
+  {
+   "size": 4,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "forced_empty": [
+    [
+     -1,
+     1
+    ]
+   ],
+   "equals_intersection_rule": true,
+   "picture": ". . x . .\n. # # # .\n. . # . .\n. . . . ."
+  },
+  {
+   "size": 4,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "forced_empty": [],
+   "equals_intersection_rule": true,
+   "picture": ". . . .\n. # # .\n. # # .\n. . . ."
+  },
+  {
+   "size": 4,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "forced_empty": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "equals_intersection_rule": true,
+   "picture": ". . . . .\n. # # x .\n. x # # .\n. . . . ."
+  },
+  {
+   "size": 5,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "forced_empty": [
+    [
+     0,
+     -3
+    ],
+    [
+     0,
+     -2
+    ],
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     0,
+     6
+    ]
+   ],
+   "equals_intersection_rule": true,
+   "picture": ". . . . . . .\nx # # # # # x\n. . . . . . ."
+  },
+  {
+   "size": 5,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "forced_empty": [
+    [
+     0,
+     -1
+    ]
+   ],
+   "equals_intersection_rule": true,
+   "picture": ". . . . . .\nx # # # # .\n. # . . . .\n. . . . . ."
+  },
+  {
+   "size": 5,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "forced_empty": [],
+   "equals_intersection_rule": true,
+   "picture": ". . . . . .\n. # # # # .\n. . # . . .\n. . . . . ."
+  },
+  {
+   "size": 5,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "forced_empty": [],
+   "equals_intersection_rule": true,
+   "picture": ". . . . .\n. # # # .\n. # # . .\n. . . . ."
+  },
+  {
+   "size": 5,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "forced_empty": [
+    [
+     1,
+     1
+    ]
+   ],
+   "equals_intersection_rule": true,
+   "picture": ". . . . .\n. # # # .\n. # x # .\n. . . . ."
+  },
+  {
+   "size": 5,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "forced_empty": [
+    [
+     1,
+     1
+    ]
+   ],
+   "equals_intersection_rule": true,
+   "picture": ". . . . .\n. # # # .\n. # x . .\n. # . . .\n. . . . ."
+  },
+  {
+   "size": 5,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "forced_empty": [
+    [
+     -1,
+     1
+    ]
+   ],
+   "equals_intersection_rule": true,
+   "picture": ". . x . .\n. # # # .\n. . # . .\n. . # . .\n. . . . ."
+  },
+  {
+   "size": 5,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "forced_empty": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "equals_intersection_rule": true,
+   "picture": ". . . . . .\n. # # # x .\n. . x # # .\n. . . . . ."
+  },
+  {
+   "size": 5,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "forced_empty": [
+    [
+     1,
+     0
+    ]
+   ],
+   "equals_intersection_rule": true,
+   "picture": ". . . . .\n. # # . .\n. x # # .\n. . # . .\n. . . . ."
+  },
+  {
+   "size": 5,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "forced_empty": [
+    [
+     0,
+     2
+    ]
+   ],
+   "equals_intersection_rule": true,
+   "picture": ". . . . .\n. # # x .\n. . # # .\n. . . # .\n. . . . ."
+  },
+  {
+   "size": 5,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "forced_empty": [],
+   "equals_intersection_rule": true,
+   "picture": ". . . . .\n. # # . .\n. . # . .\n. . # # .\n. . . . ."
+  },
+  {
+   "size": 5,
+   "cells": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "forced_empty": [],
+   "equals_intersection_rule": true,
+   "picture": ". . . . .\n. . # . .\n. # # # .\n. . # . .\n. . . . ."
+  }
+ ],
+ "shape_rules_all_equal_intersection_rule": true,
+ "symbolic_proofs_N5": {
+  "hall_rows_confine_k1": true,
+  "hall_rows_confine_k2": true,
+  "hall_rows_confine_k3": true,
+  "hall_regions_cover_rows_k1": true,
+  "hall_regions_cover_rows_k2": true,
+  "hall_regions_cover_rows_k3": true,
+  "intersection_rule_L_tromino": true,
+  "box_2x2_k1_other_regions_empty": true,
+  "box_2x3_k2_other_regions_empty": true,
+  "box_3x3_k2_other_regions_empty": true,
+  "box_3x4_k3_other_regions_empty": true,
+  "box_4x4_k4_other_regions_empty": true,
+  "box_2x2_k2_impossible": true,
+  "box_2x3_k3_impossible": true,
+  "box_3x3_k3_impossible": true,
+  "singleton_region_forces_cat": true,
+  "control_full_row_region_forces_(0,0)_empty_[expected False]": false
+ },
+ "symbolic_proofs_N6": {
+  "hall_rows_confine_k1": true,
+  "hall_rows_confine_k2": true,
+  "hall_rows_confine_k3": true,
+  "hall_rows_confine_k4": true,
+  "hall_regions_cover_rows_k1": true,
+  "hall_regions_cover_rows_k2": true,
+  "hall_regions_cover_rows_k3": true,
+  "hall_regions_cover_rows_k4": true,
+  "intersection_rule_L_tromino": true,
+  "box_2x2_k1_other_regions_empty": true,
+  "box_2x3_k2_other_regions_empty": true,
+  "box_3x3_k2_other_regions_empty": true,
+  "box_3x4_k3_other_regions_empty": true,
+  "box_4x4_k4_other_regions_empty": true,
+  "box_2x2_k2_impossible": true,
+  "box_2x3_k3_impossible": true,
+  "box_3x3_k3_impossible": true,
+  "singleton_region_forces_cat": true,
+  "control_full_row_region_forces_(0,0)_empty_[expected False]": false
+ },
+ "pair_search": {
+  "pairs_examined_up_to_symmetry": 237,
+  "impossible": [
+   {
+    "S1": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      0
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      0
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      0,
+      1
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      0
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      1,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      1,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      1,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      1,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      1
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      1,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      0
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      1,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      2
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      2
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      0,
+      1
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      0
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      1
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      2
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      2
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      0,
+      1
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      0,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      0,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      0,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      2
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      0,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      2
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      2
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      0
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      1
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      2
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      0,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      0,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      0,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "impossible": true,
+    "baseline_finds_contradiction": true
+   }
+  ],
+  "novel": [
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      5,
+      0
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . . .\nx A x x .\nx A A x .\nx B B B x\n. x x x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      2,
+      1
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -3,
+      2
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -2,
+      2
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      0
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . x .\nx A x B .\nx A A B x\n. x x B .\n. x . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      5,
+      0
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . . .\nx A x x .\nx A A B .\n. x B B x\n. x . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      2,
+      1
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -3,
+      2
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -2,
+      2
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      0
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . x .\nx A B B .\nx A A B x\n. x x B .\n. x . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      5,
+      0
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . . .\nx A x x .\nx A A x .\nx x B B x\n. x x x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      5,
+      0
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . . .\nx A x x .\nx A A B .\n. B B B x\n. x . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      -1,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . x .\nx x A A .\n. A A x .\nx B B B x\n. . x . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      -3,
+      2
+     ],
+     [
+      -2,
+      2
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      2
+     ],
+     [
+      -2,
+      2
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . x .\nx x A A .\n. A A B x\nx x B B x\n. . x x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      -3,
+      2
+     ],
+     [
+      -2,
+      2
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      2
+     ],
+     [
+      -2,
+      2
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . x .\nx x A A .\n. A A x x\nx x B B x\n. . x x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      -1,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . x .\nx x A A .\n. A A B .\nx B B B x\n. . x . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      5,
+      0
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . . .\nx A x x .\nx A x x .\nx B B B x\n. x x x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "novel": [
+     [
+      -1,
+      1
+     ],
+     [
+      0,
+      -3
+     ],
+     [
+      0,
+      -2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      0,
+      5
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      -1,
+      1
+     ],
+     [
+      0,
+      -3
+     ],
+     [
+      0,
+      -2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      5,
+      0
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x x . .\nx A x B x\nx A B B .\n. x B x .\n. x . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      2,
+      1
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -3,
+      2
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -2,
+      2
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      0
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . x .\nx A x B .\nx A x B x\n. x x B .\n. x . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      5,
+      0
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . . .\nx A x x .\nx A B x .\nx x B B x\n. x x x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      5,
+      0
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . . .\nx A x x .\nx A x B .\n. x B B x\n. x . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      2,
+      1
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -3,
+      2
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -2,
+      2
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      0
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . x .\nx A x B .\nx A B B x\n. x x B .\n. x . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      5,
+      0
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . . .\nx A x x .\nx A B B .\n. x B B x\n. x . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      2,
+      1
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -3,
+      2
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -2,
+      2
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      0
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . x .\nx A B B .\nx A x B x\n. x x B .\n. x . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      -3
+     ],
+     [
+      0,
+      -2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      2,
+      -1
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      -1,
+      1
+     ],
+     [
+      0,
+      -3
+     ],
+     [
+      0,
+      -2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      5,
+      0
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x x . .\nx A B B x\nx A B x .\nx x B x .\n. x . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      5,
+      0
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . . .\nx A x x .\nx A B x .\nx B B B x\n. x x x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      5,
+      0
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . . .\nx A x x .\nx A x x .\nx x B B x\n. x x x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      5,
+      0
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . . .\nx A B x .\nx A B x .\nx x B B x\n. x x x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      5,
+      0
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . . .\nx A x x .\nx A x B .\n. B B B x\n. x . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      1,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . . .\nx A A A .\n. A x x .\nx B B B x\n. . x . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      2,
+      0
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      2
+     ],
+     [
+      -2,
+      2
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . x .\nx A A A .\n. A x B x\n. x x B x\n. . . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      2,
+      0
+     ]
+    ],
+    "all_forced": [
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . . .\nx A A A .\n. A x B .\n. x B B x\n. . . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "novel": [
+     [
+      2,
+      0
+     ],
+     [
+      3,
+      0
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      1
+     ],
+     [
+      0,
+      -3
+     ],
+     [
+      0,
+      -2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . x . .\nx A A A x\n. A B B .\n. x B x x\n. x . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      2,
+      0
+     ]
+    ],
+    "all_forced": [
+     [
+      0,
+      -1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . . .\nx A A A .\n. A B B .\n. x B B x\n. . . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "novel": [
+     [
+      1,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      1
+     ],
+     [
+      0,
+      -3
+     ],
+     [
+      0,
+      -2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . x . .\nx A A A x\n. A x x .\nx B B x x\n. x x . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "novel": [
+     [
+      3,
+      0
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      1
+     ],
+     [
+      0,
+      -3
+     ],
+     [
+      0,
+      -2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      0
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . x . .\nx A A A x\n. A B B .\n. B B x x\n. x . . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      2,
+      0
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      2
+     ],
+     [
+      -2,
+      2
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . x .\nx A A A .\n. A B B x\n. x x B x\n. . . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      1,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      0,
+      -1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . . .\nx A A A .\n. A B x .\nx B B B x\n. . x . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "novel": [
+     [
+      1,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      1
+     ],
+     [
+      0,
+      -3
+     ],
+     [
+      0,
+      -2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . x . .\nx A A A x\n. A B x .\nx B B x x\n. x x . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      2
+     ],
+     [
+      -2,
+      2
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . x .\n. x x A .\n. B B A x\nx B B A .\n. x . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      0
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      2
+     ],
+     [
+      -2,
+      2
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . x .\nx x x A .\n. B B A x\nx x B A .\n. x . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      2
+     ],
+     [
+      -2,
+      2
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . x .\n. x x A .\n. B x A x\nx B B A .\n. x . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      1
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -3,
+      2
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -2,
+      2
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      0
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . x .\n. x x A .\nx B B A x\nx B x A .\n. x . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      0
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      2
+     ],
+     [
+      -2,
+      2
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . x .\n. x x A x\n. x x A x\nx B B A x\n. x x x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      0
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      2
+     ],
+     [
+      -2,
+      2
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . x .\n. x x A x\n. x B A x\nx B B A x\n. x x x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      1
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -3,
+      2
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -2,
+      2
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      0
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . x .\n. x x A .\nx B x A x\nx B x A .\n. x . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      -3,
+      0
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      5,
+      0
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      5,
+      0
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . . .\n. A x x .\nx A A A .\nx B B B x\n. x x x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "novel": [
+     [
+      -3,
+      0
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      5,
+      0
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      5,
+      0
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . . .\n. A x x x\nx A A A .\nx B B x x\n. x x x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      5,
+      0
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . . .\nx A x x .\nx A A A .\nx x B B x\n. x x x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      1
+     ],
+     [
+      0,
+      -3
+     ],
+     [
+      0,
+      -2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . x . .\nx A A A x\n. x x x .\nx B B B x\n. . x . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      3,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      1
+     ],
+     [
+      0,
+      -3
+     ],
+     [
+      0,
+      -2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      3,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . x . .\nx A A A x\n. B B x .\nx x B B .\n. . . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      1,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      1
+     ],
+     [
+      0,
+      -3
+     ],
+     [
+      0,
+      -2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      -1
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . x . .\nx A A A x\n. B x x .\nx B B B .\n. . . . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "novel": [
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      1
+     ],
+     [
+      0,
+      -3
+     ],
+     [
+      0,
+      -2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . x . .\nx A A A x\n. B B B .\n. x B x .\n. x . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "novel": [
+     [
+      -3,
+      0
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      5,
+      0
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      -1,
+      1
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      -3
+     ],
+     [
+      0,
+      -2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      5,
+      0
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x x x .\nx A A A x\nx B B B .\n. B x x .\n. x . . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      1
+     ],
+     [
+      0,
+      -3
+     ],
+     [
+      0,
+      -2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . x . .\nx A A A x\n. x B x .\nx B B B x\n. . x . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . x .\n. x A A x\n. x A A .\nx B B B x\n. . x . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      0
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      2,
+      -1
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . x .\n. x A A x\n. B A A .\nx B B B .\n. . . . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      0
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      3,
+      0
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . x .\n. x A A x\n. B A A .\nx B B x .\n. x . . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      0
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . x .\n. x A A x\n. x A A .\nx B B x x\n. x x . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      2
+     ],
+     [
+      -2,
+      2
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . x .\n. x x A .\n. B A A x\nx B B A .\n. x . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      0
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      2
+     ],
+     [
+      -2,
+      2
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . x .\n. x x A x\n. x A A x\nx B B A x\n. x x x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      1
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -3,
+      2
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -2,
+      2
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      0
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . x .\n. x x A .\nx B A A x\nx B x A .\n. x . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      1
+     ],
+     [
+      0,
+      -3
+     ],
+     [
+      0,
+      -2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . x . .\nx A A A x\n. x A x .\nx B B B x\n. . x . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      1,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      1
+     ],
+     [
+      0,
+      -3
+     ],
+     [
+      0,
+      -2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      -1
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . x . .\nx A A A x\n. B A x .\nx B B B .\n. . . . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . x .\n. x A A x\n. x x A .\nx B B B x\n. . x . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      0
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      3,
+      0
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . x .\n. x A A x\n. B B A .\nx B B x .\n. x . . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      -3,
+      2
+     ],
+     [
+      -2,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      2
+     ],
+     [
+      -2,
+      2
+     ],
+     [
+      -1,
+      1
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      -3
+     ],
+     [
+      0,
+      -2
+     ],
+     [
+      0,
+      -1
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . x x .\nx x A A x\n. B B A x\nx x B B .\n. . . x ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      0
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      -1
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . x .\n. x A A x\n. B x A .\nx B B B .\n. . . . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      0
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      3,
+      0
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . x .\n. x A A x\n. B x A .\nx B B x .\n. x . . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "novel": [
+     [
+      2,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -3,
+      0
+     ],
+     [
+      -2,
+      0
+     ],
+     [
+      -1,
+      0
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      5,
+      0
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . x .\n. x A A x\nx B B A .\nx B x x .\n. x . . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      0
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . x .\n. x A A x\n. x x A .\nx B B x x\n. x x . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". . . x .\n. x A A x\n. x B A .\nx B B B x\n. . x . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      0
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . x .\n. x A x x\n. x A A .\nx B B B x\n. . x . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      0
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . x .\n. x A x x\n. B A A .\nx B B B x\n. . x . ."
+   },
+   {
+    "S1": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "S2": [
+     [
+      2,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "novel": [
+     [
+      -1,
+      0
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      2
+     ]
+    ],
+    "all_forced": [
+     [
+      -1,
+      0
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      2,
+      -2
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    "beyond_one_step_lookahead": [],
+    "lookahead_unsound_cells": [],
+    "picture": ". x . x .\n. x A x .\n. A A A .\nx B B B x\n. . x . ."
+   }
+  ],
+  "pairs_beyond_one_step_lookahead": 0,
+  "lookahead_unsound_pairs": 0
+ },
+ "consecutive_rows_gap_ge_2": true,
+ "rows_two_apart_gap_ge_2_[expected False]": false,
+ "level155": {
+  "grid": [
+   "0111111111",
+   "0111111112",
+   "3333331112",
+   "3343455166",
+   "3344445155",
+   "3343455555",
+   "3343477588",
+   "3333778588",
+   "3399788888",
+   "3397777788"
+  ],
+  "cats_placed": [
+   [
+    0,
+    0
+   ],
+   [
+    1,
+    9
+   ],
+   [
+    2,
+    6
+   ],
+   [
+    3,
+    8
+   ],
+   [
+    4,
+    3
+   ],
+   [
+    9,
+    2
+   ]
+  ],
+  "solutions": [
+   [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     9
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     8
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     7,
+     4
+    ],
+    [
+     8,
+     7
+    ],
+    [
+     9,
+     2
+    ]
+   ]
+  ],
+  "unique": true,
+  "forced_from_screenshot": [
+   [
+    5,
+    5
+   ],
+   [
+    6,
+    1
+   ],
+   [
+    7,
+    4
+   ],
+   [
+    8,
+    7
+   ]
+  ],
+  "empty_from_screenshot": [
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    0,
+    6
+   ],
+   [
+    0,
+    7
+   ],
+   [
+    0,
+    8
+   ],
+   [
+    0,
+    9
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    2,
+    7
+   ],
+   [
+    2,
+    8
+   ],
+   [
+    2,
+    9
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    3,
+    2
+   ],
+   [
+    3,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    5
+   ],
+   [
+    3,
+    6
+   ],
+   [
+    3,
+    7
+   ],
+   [
+    3,
+    9
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    4,
+    1
+   ],
+   [
+    4,
+    2
+   ],
+   [
+    4,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    4,
+    6
+   ],
+   [
+    4,
+    7
+   ],
+   [
+    4,
+    8
+   ],
+   [
+    4,
+    9
+   ],
+   [
+    5,
+    0
+   ],
+   [
+    5,
+    1
+   ],
+   [
+    5,
+    2
+   ],
+   [
+    5,
+    3
+   ],
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    5,
+    7
+   ],
+   [
+    5,
+    8
+   ],
+   [
+    5,
+    9
+   ],
+   [
+    6,
+    0
+   ],
+   [
+    6,
+    2
+   ],
+   [
+    6,
+    3
+   ],
+   [
+    6,
+    4
+   ],
+   [
+    6,
+    5
+   ],
+   [
+    6,
+    6
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    6,
+    8
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    0
+   ],
+   [
+    7,
+    1
+   ],
+   [
+    7,
+    2
+   ],
+   [
+    7,
+    3
+   ],
+   [
+    7,
+    5
+   ],
+   [
+    7,
+    6
+   ],
+   [
+    7,
+    7
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    7,
+    9
+   ],
+   [
+    8,
+    0
+   ],
+   [
+    8,
+    1
+   ],
+   [
+    8,
+    2
+   ],
+   [
+    8,
+    3
+   ],
+   [
+    8,
+    4
+   ],
+   [
+    8,
+    5
+   ],
+   [
+    8,
+    6
+   ],
+   [
+    8,
+    8
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    9,
+    0
+   ],
+   [
+    9,
+    1
+   ],
+   [
+    9,
+    3
+   ],
+   [
+    9,
+    4
+   ],
+   [
+    9,
+    5
+   ],
+   [
+    9,
+    6
+   ],
+   [
+    9,
+    7
+   ],
+   [
+    9,
+    8
+   ],
+   [
+    9,
+    9
+   ]
+  ]
+ }
+}
