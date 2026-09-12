@@ -1,0 +1,5 @@
+name = "meowdoku"
+defaultTargets = ["Meowdoku"]
+
+[[lean_lib]]
+name = "Meowdoku"

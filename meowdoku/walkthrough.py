@@ -127,7 +127,7 @@ def human_solve(grid):
             t = (f"Cat {len(replay.cats)}: {cell_name(last['placed'])}" if last["placed"] is not None
                  else title)
             phases.append({"kind": "direct", "title": t, "lines": [describe(e) for e in ch],
-                           "snap": {"cats": sorted(replay.cats), "xs": xs}})
+                           "raw": list(ch), "snap": {"cats": sorted(replay.cats), "xs": xs}})
         placed_before[:] = sorted(st.cats)
         removed_before[:] = [c for c in xs_now()]
         st.log.clear()
@@ -172,7 +172,7 @@ def human_solve(grid):
         lines += [describe(e) for e in trace]
         lines.append(f"**Contradiction: {reason_text(reason)}.** So {cell_name(cell)} cannot hold a cat: cross it out.")
         phases.append({"kind": "whatif", "title": f"Stuck: try {cell_name(cell)}", "lines": lines,
-                       "snap": {**tsnap, "trial": cell}})
+                       "raw_trace": list(trace), "cell": cell, "snap": {**tsnap, "trial": cell}})
         st.cand.discard(cell)
         removed_before.append(cell)
         st.propagate()
