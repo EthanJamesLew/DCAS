@@ -104,18 +104,24 @@ class Puzzle:
 
 
 class State:
-    __slots__ = ("p", "cand", "cats", "steps")
+    __slots__ = ("p", "cand", "cats", "steps", "log")
 
-    def __init__(self, p, cand=None, cats=None):
+    def __init__(self, p, cand=None, cats=None, log=None):
         self.p = p
         N = p.N
         self.cand = cand if cand is not None else {(r, c) for r in range(N) for c in range(N)}
         self.cats = cats if cats is not None else set()
         self.steps = 0
+        self.log = log
 
     def copy(self):
-        s = State(self.p, set(self.cand), set(self.cats))
+        s = State(self.p, set(self.cand), set(self.cats), None if self.log is None else [])
         return s
+
+    def note(self, rule, what, removed=(), placed=None):
+        if self.log is not None:
+            self.log.append({"rule": rule, "what": what, "removed": sorted(removed),
+                             "placed": placed})
 
     def solved(self):
         return len(self.cats) == self.p.N
@@ -151,9 +157,11 @@ class State:
                     continue
                 K = self.unit_cands(cells)
                 if not K:
-                    raise Contradiction
+                    raise Contradiction(f"{kind} {idx} has no cell left")
                 if len(K) == 1:
+                    before = set(self.cand)
                     self.place(K[0])
+                    self.note("single", f"{kind} {idx} has one cell left", before - self.cand, K[0])
                     self.steps += 1
                     changed = True
                     continue
@@ -166,6 +174,7 @@ class State:
                 common -= set(K)
                 if common:
                     self.cand -= common
+                    self.note("common attack", f"every remaining cell of {kind} {idx} attacks these", common)
                     self.steps += 1
                     changed = True
             if changed:
@@ -178,11 +187,12 @@ class State:
                     for combo in itertools.combinations(open_colours, k):
                         lines = set().union(*(span[g] for g in combo))
                         if len(lines) < k:
-                            raise Contradiction
+                            raise Contradiction(f"colours {combo} are squeezed into fewer than {k} lines")
                         if len(lines) == k:
                             rm = {c for c in self.cand if c[axis] in lines and p.col[c[0]][c[1]] not in combo}
                             if rm:
                                 self.cand -= rm
+                                self.note("colours locked in lines", f"colours {combo} fit inside {'rows' if axis == 0 else 'columns'} {sorted(lines)}", rm)
                                 self.steps += 1
                                 changed = True
                 open_lines = [i for i in range(N) if not any(c[axis] == i for c in self.cats)]
@@ -190,11 +200,12 @@ class State:
                     for combo in itertools.combinations(open_lines, k):
                         cols_present = {p.col[c[0]][c[1]] for c in self.cand if c[axis] in combo}
                         if len(cols_present) < k:
-                            raise Contradiction
+                            raise Contradiction(f"lines {combo} contain fewer than {k} colours")
                         if len(cols_present) == k:
                             rm = {c for c in self.cand if c[axis] not in combo and p.col[c[0]][c[1]] in cols_present}
                             if rm:
                                 self.cand -= rm
+                                self.note("lines made of few colours", f"{'rows' if axis == 0 else 'columns'} {list(combo)} contain only colours {sorted(cols_present)}", rm)
                                 self.steps += 1
                                 changed = True
             if changed:
@@ -214,7 +225,7 @@ class State:
                             confined = [g for g, (r1, c1, r2, c2) in bbox.items()
                                         if r1 >= r0 and c1 >= c0 and r2 < r0 + a and c2 < c0 + b]
                             if len(confined) > cap:
-                                raise Contradiction
+                                raise Contradiction(f"{len(confined)} colours inside a {a}x{b} box that holds {cap}")
                             if len(confined) == cap and cap >= 1:
                                 rm = set()
                                 for c in self.cand:
@@ -235,6 +246,7 @@ class State:
                                         rm.add(c)
                                 if rm:
                                     self.cand -= rm
+                                    self.note("full rectangle", f"colours {confined} fill the {a}x{b} box at rows {r0}-{r0 + a - 1}, columns {c0}-{c0 + b - 1}", rm)
                                     self.steps += 1
                                     changed = True
         return self

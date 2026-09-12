@@ -11,3 +11,4 @@ every Meowdoku ("Queens" / Star-Battle with cats) board.
 * `make_images.py` -> `img/*.png`; `make_rules.py` -> `RULES.md` and `rules.html` (self-contained page).
 * `HARDEST.md`: the hardest boards found for sizes 5-10 under the rule-only solver (`hardest.py` -> `hardest.json`; `make_hardest.py` -> images, `HARDEST.md`, `hardest.html`).
 * `play.html`: playable, phone-first version of the three hardest boards (`make_play.py`).
+* `WALKTHROUGH.md`: narrated hand solution of the hardest 10x10 (`walkthrough.py`, also `walkthrough.html`).
