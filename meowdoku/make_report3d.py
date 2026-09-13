@@ -261,10 +261,14 @@ if HD:
           "solution.  Its difficulty is still depth 1: nothing found in any dimension needs a what-if inside "
           "a what-if.\n")
     else:
-        w("No 3D or 4D board needing a what-if was found within the budget.  Conjecture: with the tight "
-          "slice constraints, the direct rules plus the counting rules are complete for small cubes.\n")
+        w("No 3D or 4D board needing a what-if was found within the budget (seven minutes per size).  For "
+          "comparison, the same hill-climb in 2D reaches depth 1 within seconds at every size from 5 to 10.  "
+          "Conjecture: with one cat per slice in three directions, the direct rules plus the counting rules "
+          "are complete for cubes of side at most 5.\n")
 if "nd_hard4.png" in figs:
-    w("![hardest 4x4x4 found](img/nd_hard4.png)\n")
+    w("A typical unique 4 × 4 × 4 board from the search, drawn layer by layer, and its solution "
+      "(crosses mark every cell the ten direct-rule steps eliminate):\n")
+    w("![a unique 4x4x4 board](img/nd_hard4.png)\n")
     w("![its solution](img/nd_hard4_sol.png)\n")
 
 # --- line variant ------------------------------------------------------------
@@ -342,12 +346,14 @@ w("1. **cap = min side except the all-2 box**, for the slice variant in every di
   "after grouping runs.  For d = 3 the squares B(S)² should still admit a linear recurrence in n; find "
   "it.\n"
   "3. **King-distance Latin squares exist for every order n ≥ 13 and for 9 and 11, and for no other "
-  "order** (order 12 pending the search above).  Latin cubes with the 26-neighbour condition exist "
-  "for every n ≥ 25 and for 17, 19, 21, 23; the smallest order is between 9 and 17.\n"
+  "order**.  Latin cubes with the 26-neighbour condition (4D line variant) exist for every n ≥ 25 and "
+  "for 17, 19, 21, 23 by the cyclic construction and for no n ≤ 13 by exhaustive search; the smallest "
+  "order is 14, 15, 16 or 17.\n"
   "4. **One what-if is locally complete in 3D** for two colours of any shape inside a 3 × 3 × 3 window, "
   "as it is in 2D for shapes up to size 4 inside a 3 × 3 window.\n"
   "5. **Direct rules are complete for small cubes**: no 3D or 4D colouring with a unique solution and "
-  "n ≤ 4 needs a what-if.  (Refuted if the hill-climb in 2.7 found a depth-1 board.)\n")
+  "n ≤ 5 needs a what-if.  The hill-climb of 2.7 (about 150,000 accepted-or-rejected mutations over "
+  "16,000 unique boards) never found one; in 2D the same search finds depth-1 boards within seconds.\n")
 
 with open(os.path.join(HERE, "REPORT_3D.md"), "w") as f:
     f.write("\n".join(md) + "\n")

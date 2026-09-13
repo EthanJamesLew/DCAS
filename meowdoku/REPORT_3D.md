@@ -58,7 +58,17 @@ Boxes holding fewer than their smallest side: 2x2x2x2x2.
 | d = 4 | 1 | 0 | 96 | 9272 | 1331144 |  |  |  |
 | d = 5 | 1 | 0 | 800 | 274160 |  |  |  |  |
 
-d = 2 is Hertzsprung's sequence (OEIS A002464).  The d = 3 sequence 1, 0, 8, 236, 7188, 288940, 15296980 is not in the OEIS (searched 2026-09-13).  Some structure is visible: n = 2 is 0 in every dimension (the 2^d rule), n = 3 gives 0, 8, 800 for d = 2, 3, 5 (in 3D: the cat of the middle layer sits on one of 8 edge-midpoints or corners with the other two forced), and for fixed n the count grows roughly like (n!)^{d−1} times a constant that tends to 1 as d grows, because a random pair of consecutive cats touches with probability about (3/n)^{d−1}.
+d = 2 is Hertzsprung's sequence (OEIS A002464).  The d = 3 sequence 1, 0, 8, 236, 7188, 288940, 15296980 is not in the OEIS (searched 2026-09-13), but it needs no new recurrence: every dimension is determined by 2D data.
+
+**Theorem (transfer formula).**  Call a step i (between slices i and i+1) *bad* in a permutation π if |π(i) − π(i+1)| ≤ 1, and let B(S) be the number of permutations of [n] that are bad at every step of a set S.  A placement is a (d−1)-tuple of permutations, and two consecutive cats touch exactly when the step is bad in *every* coordinate.  Inclusion-exclusion over the set of touching steps gives
+
+    K_d(n) = Σ_{S ⊆ {0..n−2}} (−1)^{|S|} · B(S)^{d−1}.
+
+Checked against every entry of the table (n ≤ 6, d ≤ 5).  For d = 2 it is the inclusion-exclusion form of Hertzsprung's count; for n = 3 the only permutations with a bad step 0 are 012, 210, 102, 120 (B = 4), with a bad step 1 likewise 4, with both bad 2, so
+
+    K_d(3) = 6^{d−1} − 2·4^{d−1} + 2^{d−1}  =  0, 8, 96, 800, ...
+
+which is the row n = 3 above.  In words: as d grows, K_d(n)/(n!)^{d−1} → 1, because a step touches with probability about (3/n)^{d−1} per coordinate pair and the corrections are geometric.
 
 ### 2.4 Forced patterns inside small boxes
 
@@ -109,7 +119,17 @@ For every pair of disjoint shapes of size ≤ 2 inside a 3 × 3 × 3 window (157
 
 Colours were grown from a random valid placement exactly as in 2D.  Two things stand out.  Random 3D and 4D colourings have a unique solution far more often than 2D ones (2D: 65% at n = 5 falling to 15% at n = 10; 3D: 54% at n = 3, 26% at n = 4, 15% at n = 5), because a colour that touches n − 1 slices in each of three directions is a very tight constraint.  And *none* of the unique random boards needed a what-if: the direct rules finished every one.  A hill-climb on the colouring (`hard3d.py`) looks for boards that do:
 
-![hardest 4x4x4 found](img/nd_hard4.png)
+| board | unique boards sampled | climb steps | best difficulty (depth, rounds, eliminations) |
+|---|---|---|---|
+| 3D, n = 4 | 8706 | 76228 | (0, 0, 0) |
+| 3D, n = 5 | 1359 | 20003 | (0, 0, 0) |
+| 4D, n = 3 | 5971 | 51912 | (0, 0, 0) |
+
+No 3D or 4D board needing a what-if was found within the budget (seven minutes per size).  For comparison, the same hill-climb in 2D reaches depth 1 within seconds at every size from 5 to 10.  Conjecture: with one cat per slice in three directions, the direct rules plus the counting rules are complete for cubes of side at most 5.
+
+A typical unique 4 × 4 × 4 board from the search, drawn layer by layer, and its solution (crosses mark every cell the ten direct-rule steps eliminate):
+
+![a unique 4x4x4 board](img/nd_hard4.png)
 
 ![its solution](img/nd_hard4_sol.png)
 
@@ -176,8 +196,8 @@ A 3 × 3 × 3 holds five non-touching cats when a cat only owns its three lines.
 ## 5. Conjectures
 
 1. **cap = min side except the all-2 box**, for the slice variant in every dimension d ≥ 3 and every box.  (Verified: sides ≤ 4 in 3D, ≤ 3 in 4D and 5D.)
-2. **The 3D count sequence** 1, 0, 8, 236, 7188, 288940, 15296980 satisfies a linear recurrence with polynomial coefficients, like Hertzsprung's, obtained by inclusion-exclusion over the set of consecutive pairs that touch (a pair touches iff it is a difference of at most 1 in *both* permutations).
-3. **King-distance Latin squares exist for every order n ≥ 13 and for 9 and 11, and for no other order** (order 12 pending the search above).  Latin cubes with the 26-neighbour condition exist for every n ≥ 25 and for 17, 19, 21, 23; the smallest order is between 9 and 17.
+2. **A recurrence for the 3D counts.**  The transfer formula of 2.3 expresses K_3(n) through the 2^{n−1} numbers B(S); Hertzsprung's recurrence comes from the fact that for d = 2 only |S| matters after grouping runs.  For d = 3 the squares B(S)² should still admit a linear recurrence in n; find it.
+3. **King-distance Latin squares exist for every order n ≥ 13 and for 9 and 11, and for no other order**.  Latin cubes with the 26-neighbour condition (4D line variant) exist for every n ≥ 25 and for 17, 19, 21, 23 by the cyclic construction and for no n ≤ 13 by exhaustive search; the smallest order is 14, 15, 16 or 17.
 4. **One what-if is locally complete in 3D** for two colours of any shape inside a 3 × 3 × 3 window, as it is in 2D for shapes up to size 4 inside a 3 × 3 window.
-5. **Direct rules are complete for small cubes**: no 3D or 4D colouring with a unique solution and n ≤ 4 needs a what-if.  (Refuted if the hill-climb in 2.7 found a depth-1 board.)
+5. **Direct rules are complete for small cubes**: no 3D or 4D colouring with a unique solution and n ≤ 5 needs a what-if.  The hill-climb of 2.7 (about 150,000 accepted-or-rejected mutations over 16,000 unique boards) never found one; in 2D the same search finds depth-1 boards within seconds.
 
