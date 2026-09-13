@@ -411,13 +411,18 @@ class PuzzleND:
 
 
 class StateND:
-    def __init__(self, p, cand=None, cats=None):
+    def __init__(self, p, cand=None, cats=None, log=None):
         self.p = p
         self.cand = set(p.cells) if cand is None else cand
         self.cats = set() if cats is None else cats
+        self.log = log
 
     def copy(self):
         return StateND(self.p, set(self.cand), set(self.cats))
+
+    def note(self, rule, what, removed=(), placed=None):
+        if self.log is not None:
+            self.log.append({"rule": rule, "what": what, "removed": sorted(removed), "placed": placed})
 
     def solved(self):
         return len(self.cats) == self.p.n
@@ -444,7 +449,10 @@ class StateND:
                 if not K:
                     raise Contradiction
                 if len(K) == 1:
-                    self.place(K[0]); changed = True; continue
+                    before = set(self.cand)
+                    self.place(K[0])
+                    self.note("single", f"{kind} {idx}", before - self.cand, K[0])
+                    changed = True; continue
                 common = set(p.att[K[0]])
                 for k in K[1:]:
                     common &= set(p.att[k])
@@ -453,7 +461,9 @@ class StateND:
                 common &= self.cand
                 common -= set(K)
                 if common:
-                    self.cand -= common; changed = True
+                    self.cand -= common
+                    self.note("common attack", f"{kind} {idx}", common)
+                    changed = True
             if changed:
                 continue
             open_colours = [g for g in range(p.n) if not any(c in self.cats for c in p.cells_of.get(g, []))]
@@ -467,7 +477,9 @@ class StateND:
                         if len(lines) == k:
                             rm = {c for c in self.cand if c[axis] in lines and p.colour[c] not in combo}
                             if rm:
-                                self.cand -= rm; changed = True
+                                self.cand -= rm
+                                self.note("colours locked in slices", f"colours {combo} inside axis-{axis} slices {sorted(lines)}", rm)
+                                changed = True
                 open_lines = [v for v in range(p.n) if not any(c[axis] == v for c in self.cats)]
                 for k in (1, 2, 3):
                     for combo in itertools.combinations(open_lines, k):
@@ -477,7 +489,9 @@ class StateND:
                         if len(present) == k:
                             rm = {c for c in self.cand if c[axis] not in combo and p.colour[c] in present}
                             if rm:
-                                self.cand -= rm; changed = True
+                                self.cand -= rm
+                                self.note("slices made of few colours", f"axis-{axis} slices {list(combo)} contain only colours {sorted(present)}", rm)
+                                changed = True
         return self
 
 
