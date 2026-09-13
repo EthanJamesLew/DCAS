@@ -25,7 +25,7 @@ FONT_B = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.tt
 
 
 def board(rows, cols, colors=None, xs=(), cats=(), rings=(), outlines=(), dots=(),
-          cell=64, gap=7, pad=12):
+          cell=64, gap=7, pad=12, labels=None):
     """Draw one board panel (white rounded card) at oversampled scale."""
     colors = colors or {}
     cs, gs, ps = cell * S, gap * S, pad * S
@@ -66,6 +66,12 @@ def board(rows, cols, colors=None, xs=(), cats=(), rings=(), outlines=(), dots=(
         sz = int(cs * 0.80)
         cat = CAT.resize((sz, int(sz * CAT.height / CAT.width)), Image.LANCZOS)
         im.alpha_composite(cat, (int(x + (cs - cat.width) / 2), int(y + (cs - cat.height) / 2)))
+    if labels:
+        lf = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", int(cs * 0.42))
+        for (r, c), text in labels.items():
+            x, y = xy(r, c)
+            tw = d.textlength(str(text), font=lf)
+            d.text((x + (cs - tw) / 2, y + cs * 0.22), str(text), fill=(70, 45, 45), font=lf)
     for (r0, c0, r1, c1, colour) in outlines:
         x0, y0 = xy(r0, c0)
         x1, y1 = xy(r1, c1)

@@ -1,0 +1,9 @@
+{
+ "pairs_3d": {
+  "pairs": 157,
+  "impossible": 99,
+  "novel": 48,
+  "beyond_one_whatif": 0,
+  "examples": []
+ }
+}
