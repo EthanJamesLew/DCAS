@@ -16,3 +16,4 @@ every Meowdoku ("Queens" / Star-Battle with cats) board.
 * `lean/`: a Lean 4 library (no Mathlib) with the definitions, every rule proven, a game engine, and the
   hardest 10x10 solved move by move with uniqueness verified by Lean's kernel (`make_lean_game.py` generates the game).
 * `REPORT_3D.md`: properties of the slice and line variants in 3 to 5 dimensions (`nd.py`, `hard3d.py`, `make_report3d.py`).
+* `play3d.html`: Meowdoku Cube, the 3D game for phone and web (`make_pack3d.py` -> `pack3d.json`, `make_play3d.py`).
